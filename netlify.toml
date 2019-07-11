@@ -1,0 +1,12 @@
+[build]
+publish = 'dist'
+command = 'yarn build'
+
+[context.production.environment]
+VUE_APP_API_ENDPOINT = 'https://q.trap.jp/api/1.0'
+VUE_APP_API_CLIENT_ID = 'I6j6lLE9j9QUvQNHSpqXUR1i5f1jZUkScnEx'
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
